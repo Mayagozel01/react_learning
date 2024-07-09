@@ -60,8 +60,8 @@ export default function App() {
   return (
     <>
       <NavBar>
-        <Search />
-        <NumResults movies={movies} />
+        <Search />//<NavBar-yn children-i gornushinde ugradylyar . barde <Search/> - e we  <NavBar/>-a argument hokmunde seredip bolar.
+        <NumResults movies={movies} />//<NavBar-yn children-i gornushinde ugradylyar
       </NavBar>
 
       <Main>
@@ -78,11 +78,11 @@ export default function App() {
   );
 }
 
-function NavBar({ children }) {
+function NavBar({ children }) {//{children} parametr ozunde argumentleri saklayar
   return (
     <nav className="nav-bar">
       <Logo />
-      {children}
+      {children}//ozunde argumentleri saklayan parametr
     </nav>
   );
 }
